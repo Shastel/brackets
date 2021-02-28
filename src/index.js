@@ -1,5 +1,3 @@
-const { test } = require("mocha");
-
 module.exports = function check(str, bracketsConfig) {
     configAsArrayOfStrings = [];
     bracketsConfig.forEach(item => {
