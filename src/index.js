@@ -7,16 +7,18 @@ module.exports = function check(str, bracketsConfig) {
     for (var j=0; j<bracketsConfig.length; j++){
         if (bracketsConfig[j].includes(arr[arr.length-1])){
             var num = j;
+        }
+    }
         
-      if ((bracketsConfig[num].includes(str[i])) && 
-      (bracketsConfig[num].includes(arr[arr.length-1]))){  
+      if ((bracketsConfig[num].indexOf(str[i])==1) && 
+      (bracketsConfig[num].indexOf(arr[arr.length-1])==0)){
+         
          arr.pop();
        }else {
          arr.push(str[i]);
        }
        }
-      }
-    }
+    
     if (arr.length===0){
         result=true;
     }else {
