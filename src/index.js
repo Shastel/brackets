@@ -1,5 +1,5 @@
 module.exports = function check(str, bracketsConfig) {
-    configAsArrayOfStrings = [];
+    const configAsArrayOfStrings = [];
     bracketsConfig.forEach(item => {
         configAsArrayOfStrings.push(item[0] + item[1]);
     });
